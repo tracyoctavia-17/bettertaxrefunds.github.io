@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Background for Entire Page Except Footer */
+  .content-wrapper {
+    background: url('./Photos/taxfree.webp') no-repeat center center/cover; /* Background photo */
+    background-attachment: fixed; /* Keeps the image fixed as you scroll */
+    color: #fff; /* Ensure text contrasts with the background */
+    min-height: 100vh; /* Ensures it covers the full viewport */
+  }
+  
+  /* Header Styles */
+  .header {
+    position: relative;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px; /* Rounded edges */
+    overflow: hidden; /* Ensures no content spills out */
+  }
+  
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(176, 201, 177, 0.5); /* Transparent green overlay */
+    z-index: 1; /* Behind the text */
+  }
+  
+  .header * {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav {
+    margin-left: auto;
+  }
+  
+  .nav ul li {
+    margin-left: 20px;
+  }
+  
+  .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    text-align: center;
+    padding: 5rem 0;
+    background: #007BFF;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero .btn {
+    background: #0056b3;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .hero .btn:hover {
+    background: #003d80;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 4rem 0;
+    background: #f4f4f4;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .features .feature {
+    text-align: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .features .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+  }
+  
+  .features h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  

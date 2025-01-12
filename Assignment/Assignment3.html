@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Tax Refunds</title>
+    <link rel="icon" type="image/x-icon" href="./Photos/favicon.ico">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="Assignment3.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <img src="./Photos/logo.png" alt="Better Tax Refunds Logo" class="logo-img">
+            <div class="logo">Better Tax Refunds</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Book Online</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Beige Banner Section -->
+    <div class="beige-banner">
+        <h2>Homepage</h2>
+    </div>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+        <!-- Left Side: Message Box and Slideshow -->
+        <div class="left-section">
+            <!-- Slideshow -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./Photos/photo1.jpg" alt="Slide 1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./Photos/photo2.jpg" alt="Slide 2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./Photos/photo3.jpg" alt="Slide 3">
+                </div>
+            </div>
+
+            <!-- Message Box -->
+            <div class="message-box">
+                <h2>Better Tax Refunds</h2>
+                <p>We simplify tax preparation to maximize your refunds. Our experts provide reliable, personalized services to ensure stress-free tax seasons.</p>
+            </div>
+        </div>
+        <!-- Hero Content Above Calculator -->
+        <div class="hero-content">
+            <h1>Maximize Your Tax Refund with Ease</h1>
+            <p>Let our experts handle the details while you enjoy stress-free tax filing and bigger refunds.</p>
+            <div class="cta-buttons">
+                <button onclick="document.querySelector('.savings-calculator').scrollIntoView({ behavior: 'smooth' });">
+                    Start Saving Now
+                </button>
+                <button onclick="document.querySelector('.consultation-form').scrollIntoView({ behavior: 'smooth' });">
+                    Schedule a Consultation Now
+                </button>
+            </div>
+            
+            <!-- Savings Calculator -->
+            <div class="savings-calculator">
+                <h2>Savings Calculator</h2>
+                <label for="goal">Goal Amount:</label>
+                <input type="number" id="goal" placeholder="Enter your goal">
+                <br>
+                <label for="current">Current Savings:</label>
+                <input type="number" id="current" placeholder="Enter current savings">
+                <br>
+                <label for="monthly">Monthly Savings:</label>
+                <input type="number" id="monthly" placeholder="Enter monthly savings">
+                <br>
+                <button onclick="calculateAndReset()">Calculate</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- Include JavaScript -->
+    <script src="photos.js"></script>
+    <script src="script.js"></script>
+</section>
+
+<div class="wave-banner">
+    <div class="wave"></div>
+  </div>
+
+  <section class="consultation-testimonials">
+    <div class="container">
+        <!-- Book Consultation Form -->
+        <div class="consultation">
+            <h2>Book a Consultation with Us</h2>
+            <p>Get personalized tax advice and support tailored to your needs. Fill out your details, and we'll get in touch with you!</p>
+            <form class="consultation-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Add any specific questions or details (optional)"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Book Consultation</button>
+            </form>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials">
+            <h2>Why Choose Us</h2>
+            <p>Here are some testimonials from our happy clients:</p>
+            <ul>
+                <li>
+                    <div class="message-box">
+                        <strong>Steven Delaney</strong>
+                        <p>Very happy with the service, very professional and reliable. 100% recommended it...</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="message-box"> 
+                        <strong>Andrew Boris</strong>
+                        <p>As a regular client from the last 4 years, I never needed to look elsewhere for expert advice. Highly recommended...</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="message-box">
+                        <strong>Naghmana Munir</strong>
+                        <p>1st meeting with Better Tax Refund. Very helpful and thoughtful advice...</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="message-box"> 
+                        <strong>Helen Lee</strong>
+                        <p>Very good service, happy with the work. Used it for the first time and was impressed...</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="message-box">
+                        <strong>Gurmeet Singh</strong>
+                        <p>Great service and very professional. Highly recommended...</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Features Section -->
+    <div class="wave-banner">
+        <div class="wave"></div>
+      </div>
+      <section class="features">
+        <div class="container features-grid">
+            <div class="feature">
+                <h3>Maximize Refunds</h3>
+                <p>Help clients understand how they can maximize their tax refunds efficiently.</p>
+            </div>
+            <div class="feature">
+                <h3>Expert Tax Advice</h3>
+                <p>Provide personalized advice from tax professionals to simplify complex issues.</p>
+            </div>
+            <div class="feature">
+                <h3>Tax Deadline Reminders</h3>
+                <p>Keep users informed of important tax filing deadlines to avoid penalties.</p>
+            </div>
+            <div class="feature">
+                <h3>Simple Tax Filing</h3>
+                <p>Highlight services that make tax filing easy and stress-free.</p>
+            </div>
+            <div class="feature">
+                <h3>Business Tax Solutions</h3>
+                <p>Offer specialized solutions for small businesses to manage their tax needs.</p>
+            </div>
+            <div class="feature">
+                <h3>Savings Insights</h3>
+                <p>Help users track their financial goals and improve savings through optimized tax returns.</p>
+            </div>
+        </div>
+    </section>
+    <div class="acknowledgment">
+        <p>
+            At Better Tax Refunds, we recognize and respect the Traditional Owners of the land across Australia, honoring their deep connection to land, sea, and community. We pay tribute to their Elders past, present, and emerging and extend our respect to all Aboriginal and Torres Strait Islander peoples.
+        </p>
+    </div>
+<!-- Chatbot Symbol -->
+<div class="chatbot-icon" onclick="toggleChatbot()">
+    💬
+</div>
+
+
+<!-- Chatbot Box -->
+<div class="chatbox" id="chatbox">
+    <div class="chat-header">Chat with Us</div>
+    <div class="chat-body">
+        <div class="messages"></div>
+    </div>
+    <input type="text" id="chat-input" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
+</div>
+<script src="chatbot.js"></script>
+
+
+    <footer class="footer">
+        <!-- Footer content goes here -->
+    </footer>
+    
+    <footer class="footer">
+        <div class="container footer-container">
+            <!-- Website Use Section -->
+            <div class="footer-column">
+                <h4>Website Use</h4>
+                <ul>
+                    <li><a href="#social-media">Social Media</a></li>
+                    <li><a href="#copyright">Copyright</a></li>
+                    <li><a href="#privacy">Privacy and Disclaimer</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Careers Section -->
+            <div class="footer-column">
+                <h4>Corporate Info</h4>
+                <ul>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#about">About Better Tax Refunds</a></li>
+                    <li><a href="#investor-relations">Investor Relations</a></li>
+                    <li><a href="#governance">Corporate Governance</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Us Section -->
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p><strong>Address:</strong> 4 Castlemaine Way Caroline Springs 3023 VIC</p>
+                <p><strong>Phone:</strong> 04 000 80 956</p>
+                <p><strong>Email:</strong> <a href="mailto:admin@bettertaxrefunds.com.au"> admin@bettertaxrefunds.com.au</a></p>
+                <p><strong>Office Hours:</strong><br>Mon-Fri: 9:00 AM - 5:00 PM<br>Sat-Sun: Closed</p>
+            </div>
+    
+            <!-- Subscribe Section -->
+            <div class="footer-column">
+                <h4>Subscribe for Updates</h4>
+                <p>Receive email notifications from Better Tax Refunds</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Email address">
+                    <button type="submit">&#x2192;</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
